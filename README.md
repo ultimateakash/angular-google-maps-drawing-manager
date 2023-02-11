@@ -1,4 +1,6 @@
-# AngularGoogleMapsDrawingManager
+# Integrate Google Maps Drawing Manager in Angular  
+
+<p align="center"><img src="https://github.com/ultimateakash/angular-google-maps-drawing-manager/blob/master/src/assets/angular-google-maps-drawing-manager.png"></p>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
 
