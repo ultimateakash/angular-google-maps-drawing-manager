@@ -14,8 +14,9 @@ export class AppComponent {
   zoom: number = 15;
   lat: number = 28.626137;
   lng: number = 79.821603;
+
   activePolygonIndex!: number;
-  drawingMode!: OverlayType | null;
+  drawingMode: any = null;
 
   drawingControlOptions: DrawingControlOptions = {
     position: ControlPosition.TOP_CENTER,
@@ -68,6 +69,7 @@ export class AppComponent {
   }
 
   onOverlayComplete($overlayEvent: any) {
+    this.drawingMode = this.drawingMode === null ? '' : null;
     if ($overlayEvent.type === OverlayType.POLYGONE) {
       const newPolygon = $overlayEvent.overlay.getPath()
         .getArray()
